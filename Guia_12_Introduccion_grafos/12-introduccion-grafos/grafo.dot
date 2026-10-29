@@ -1,0 +1,32 @@
+graph G {
+  layout=neato; overlap=false; splines=true;
+  node [shape=circle, style=solid, color=black, fontcolor=black, fontname="Helvetica", fontsize=11, width=1.4, fixedsize=true];
+  edge [color=black, fontcolor=black, fontname="Helvetica", fontsize=11];
+  bgcolor=white;
+  "Portal Norte" [pos="0,8.4!"];
+  "Calle 100" [pos="4.5,8.4!"];
+  "Calle 72" [pos="9,8.4!"];
+  "Calle 45" [pos="9,4.9!"];
+  "Centro" [pos="9,1.4!"];
+  "Museo" [pos="13.5,2.8!"];
+  "Universidad" [pos="13.5,6.3!"];
+  "Aeropuerto" [pos="4.5,4.2!"];
+  "Portal Sur" [pos="13.5,-0.7!"];
+  "Portal Occidente" [pos="4.5,0!"];
+  "Portal Norte" -- "Calle 100" [label="8"];
+  "Calle 100" -- "Calle 72" [label="6"];
+  "Calle 72" -- "Calle 45" [label="5"];
+  "Calle 45" -- "Centro" [label="7"];
+  "Centro" -- "Portal Sur" [label="12"];
+  "Centro" -- "Museo" [label="4"];
+  "Museo" -- "Universidad" [label="5"];
+  "Universidad" -- "Calle 45" [label="6"];
+  "Calle 72" -- "Universidad" [label="9"];
+  "Calle 100" -- "Aeropuerto" [label="14"];
+  "Aeropuerto" -- "Portal Occidente" [label="10"];
+  "Portal Occidente" -- "Centro" [label="16"];
+  "Portal Occidente" -- "Portal Sur" [label="13"];
+  "Aeropuerto" -- "Calle 72" [label="11"];
+  "Museo" -- "Portal Sur" [label="10"];
+  "Portal Norte" -- "Aeropuerto" [label="18"];
+}

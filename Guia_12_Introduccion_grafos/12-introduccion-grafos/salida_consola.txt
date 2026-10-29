@@ -1,0 +1,43 @@
+=== TABLA DE VERTICES ===
+Vertice            Grado
+Portal Norte       2
+Calle 100          3
+Calle 72           4
+Calle 45           3
+Centro             4
+Museo              3
+Universidad        3
+Aeropuerto         4
+Portal Sur         3
+Portal Occidente   3
+
+=== TABLA DE ARISTAS ===
+#   Origen             Destino            Peso     Dirigida 
+1   Portal Norte       Calle 100          8        No       
+2   Calle 100          Calle 72           6        No       
+3   Calle 72           Calle 45           5        No       
+4   Calle 45           Centro             7        No       
+5   Centro             Portal Sur         12       No       
+6   Centro             Museo              4        No       
+7   Museo              Universidad        5        No       
+8   Universidad        Calle 45           6        No       
+9   Calle 72           Universidad        9        No       
+10  Calle 100          Aeropuerto         14       No       
+11  Aeropuerto         Portal Occidente   10       No       
+12  Portal Occidente   Centro             16       No       
+13  Portal Occidente   Portal Sur         13       No       
+14  Aeropuerto         Calle 72           11       No       
+15  Museo              Portal Sur         10       No       
+16  Portal Norte       Aeropuerto         18       No       
+
+=== CLASIFICACION ===
+Vertices |V| = 10
+Aristas  |A| = 16
+Conexo: true
+Densidad: 0.356 (16 de 45 aristas posibles)
+Ciclo encontrado: [Calle 100, Calle 72, Calle 45, Centro, Portal Sur, Portal Occidente, Aeropuerto, Calle 100]
+
+=== EJERCICIO: VERSION DIRIGIDA ===
+Desde Portal Norte se llega a 10 de 10 estaciones
+Desde Portal Sur se llega a 1 de 10 estaciones
+Desde Portal Occidente se llega a 6 de 10 estaciones
